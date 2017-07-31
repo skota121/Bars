@@ -1,12 +1,10 @@
-
 import json
 import requests
 import sys
 import nltk
-import re
 
 
-headers = {'Authorization': 'Bearer '}
+headers = {'Authorization': 'Bearer iPquHhc8QiSBlOddvWbqUNL7y3x16ipkFPftovM5D530PyhmJSifs0le6xdesqki'}
 song = sys.argv[1]
 baseUrl = 'https://api.genius.com'
 ## Search for Song and Return Artist
@@ -40,8 +38,10 @@ for song in songs:
 	titles.append(song["title"].encode('ascii'))
 
 titles = [x.lower() for x in titles]
+tagged_titles = []
 
-file = open('titles.txt', 'w')
-
-for item in titles:
-	file.write("%s\n" % item)
+for title in titles:
+	tokens = nltk.word_tokenize(title)
+	tagged = nltk.pos_tag(tokens)
+	tagged_titles.append(tagged)
+print tagged_titles
