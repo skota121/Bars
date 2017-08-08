@@ -27,7 +27,7 @@ tweeter = ' '.join(tweets)
 
 
 
-profile = personality_insights.profile(twit, content_type='text/plain', raw_scores=True, consumption_preferences=True)
+profile = personality_insights.profile(tweeter, content_type='text/plain', raw_scores=True, consumption_preferences=True)
 # needs = profile["needs"]
 personality = profile["personality"]
 
