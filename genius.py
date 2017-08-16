@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 import matplotlib.pyplot as plt
 
-headers = {'Authorization': 'Bearer TOKEN'}
+headers = {'Authorization': 'Bearer '}
 song = sys.argv[1]
 baseUrl = 'https://api.genius.com'
 ## Search for Song and Return Artist
