@@ -7,10 +7,7 @@ import watson_developer_cloud.natural_language_understanding.features.v1 \
 import sys
 
 
-natural_language_understanding = NaturalLanguageUnderstandingV1(
-  username="",
-  password="",
-  version="2017-02-27")
+natural_language_understanding = NaturalLanguageUnderstandingV1(username="c0b13db7-139b-4bc9-80cb-f299969f4507", password="VXMaaxJ7TZcY", version="2017-02-27")
 
 baseUrl = 'http://www.azlyrics.com/lyrics/{}/{}.html'.format(sys.argv[1],sys.argv[2])
 result = urllib2.urlopen(baseUrl).read()
@@ -37,3 +34,4 @@ print 'Sadness:', response_sadness
 print 'Disgust:', response_disgust
 print 'Fear:', response_fear
 print 'Joy:', response_joy
+print response
