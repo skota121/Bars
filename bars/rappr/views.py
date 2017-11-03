@@ -22,12 +22,12 @@ def detail(request, rapper):
 	  as Features
 	import sys
 
-	consumer_key = ''
-	consumer_secret = ''
-	access_token = ''
-	access_token_secret = ''
+	consumer_key = '8jruMNB27ooIxsfmqWzwUTKMy'
+	consumer_secret = 'wJLussOfLPHTnG7VrhcyVwt6CMYqtrZLMzruFMu6GyMaOed8L6'
+	access_token = '1581800299-3hyESTUJn0iyO1KYFjk5sjc03fDTrrd3gndDLQu'
+	access_token_secret = 'oWeReH3VlAADUTUd3M2FFaS3eUpEux7m4QGTp4ucvY4Jz'
 
-	personality_insights = PersonalityInsightsV3(version='2016-10-20', username='', password='')
+	personality_insights = PersonalityInsightsV3(version='2016-10-20', username='fa96efb0-58cc-4edb-a56a-6ded9ac0bf62', password='o0Z3ISUfENpt')
 
 
 
@@ -79,7 +79,7 @@ def results(request, rapper, music):
 
 	
 
-	natural_language_understanding = NaturalLanguageUnderstandingV1(username="", password="", version="")
+	natural_language_understanding = NaturalLanguageUnderstandingV1(username="a087fa93-7a37-4ec1-938d-55641e93c4c4", password="xR31CLPI7Kje", version="2017-02-27")
 
 	baseUrl = 'http://www.azlyrics.com/lyrics/{}/{}.html'.format(rapper,music)
 	result = urllib2.urlopen(baseUrl).read()
