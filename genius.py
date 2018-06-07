@@ -98,30 +98,3 @@ plt.xlabel('Usage')
 plt.title('Part of Speech Most Commonly Used in Song Names by Artist')
  
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
